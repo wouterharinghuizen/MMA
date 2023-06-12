@@ -70,7 +70,7 @@ class MainWindow(QMainWindow):
             tags = df['tags'].iloc[random_indices].values
             points = df[['umap_x','umap_y']].iloc[random_indices].values
             image_features = image_features[random_indices]
-            img_paths = df['filepaths'].iloc[random_indices].values
+            img_paths = df['image'].iloc[random_indices].values
 
         if sample_selection == 'first':
             tags = df['tags'].iloc[:num_samples].values
